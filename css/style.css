@@ -1,0 +1,169 @@
+.edit-img {
+    display: none;
+}
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #ABA7A7;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px #D6D2D2;
+    position: absolute;
+    left: 40%;
+    top: 14%;
+    background-color: #E8EEF3;
+}
+
+.image-container:hover {
+    transform: scale(1.01);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.image-container:hover .edit-img {
+    display: block;
+    transform: scale(1.15);
+    position: absolute;
+    top: 55px;
+    left: 75%;
+}
+
+.profile-img {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+}
+
+.modal-title {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.modal-content {
+    width: 900px;
+    border-radius: 1px;
+    margin-left: -20%;
+}
+
+.modal-body {
+    width: 100%;
+    height: 400px;
+}
+
+.drop-container {
+    position: relative;
+    margin-top: 4%;
+    left: 20%;
+    width: 550px;
+    height: 250px;
+    border: 3px dashed #ABA7A7;
+}
+
+.drop-msg {
+    top: 30%;
+    position: relative;
+    font-size: 20px;
+    color: #BDBABA;
+    text-align: center;
+}
+
+.social-img {
+    transform: scale(0.2);
+    position: absolute;
+    top: -14%;
+    left: 0;
+    cursor: pointer;
+}
+
+.social-img:hover {
+    transform: scale(0.22);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.fb {
+    left: 20%;
+    -webkit-filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+.twitter {
+    left: 40%;
+    -webkit-filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+.ng-cam-container {
+    position: absolute;
+    top: 26%;
+    left: 10%;
+}
+
+.web-cam-img-output {
+    margin-left: 60%;
+    margin-top: 5.5%;
+    height: 200px;
+    width: 250px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#ng-camera-action {
+    margin-top: 5px;
+    width: 100%;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.croppie-container {
+    position: absolute;
+    margin-top: 20px;
+    width: 50%;
+    height: 70%;
+}
+
+.cropped-img {
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    margin-left: 58%;
+    margin-top: 35px;
+}

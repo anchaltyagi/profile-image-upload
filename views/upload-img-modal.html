@@ -1,0 +1,27 @@
+<div>
+    <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Select profile photo</h5>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#upload" data-toggle="tab">Upload photos</a></li>
+            <li><a href="#webCam" data-toggle="tab">Web Camera</a></li>
+            <li><a href="#linkedIn" data-toggle="tab">Your Photos</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="upload" class="tab-pane fade in active">
+                <div ng-include="'./views/upload-template.html'"></div>
+            </div>
+            <div id="webCam" class="tab-pane fade">
+                <div ng-include="'./views/web-camera-template.html'"></div>
+            </div>
+            <div id="linkedIn" class="tab-pane fade">
+                <div ng-include="'./views/social-image-template.html'"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm btn-info" type="button" ng-click="vm.selectProfileImage();$dismiss();">Set as profile photo</button>
+        <button class="btn btn-sm btn-default" type="button" ng-click="$dismiss()">Cancel</button>
+    </div>
+</div>

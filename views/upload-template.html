@@ -1,0 +1,15 @@
+<div>
+    <crop-image class="croppie-container" ng-if="vm.uploadedImage" />
+    <div class="drop-container" ng-show="!vm.uploadedImage">
+        <div class="drop-msg">
+            <div>Drag and drop photo here</div>
+            <div>--or--</div>
+            <div class="fileUpload btn btn-sm btn-info">
+                <span>Select a photo</span>
+                <input class="upload" upload-image="onFileSelect($files)" accept="image/*" type="file">
+            </div>
+        </div>
+    </div>
+
+    <img class="cropped-img" ng-src="{{vm.croppedImage}}" ng-if="vm.croppedImage" />
+</div>

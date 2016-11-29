@@ -1,0 +1,5 @@
+<div>
+    <ng-camera class="ng-cam-container" output-height="180" output-width="250" viewer-height="200" viewer-width="250" image-format="jpeg" jpeg-quality="100" action-message="Take picture" snapshot="vm.webCamPicture">
+    </ng-camera>
+    <img class="web-cam-img-output" ng-src="{{vm.webCamPicture}}" ng-if="vm.webCamPicture" />
+</div>

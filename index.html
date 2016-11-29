@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <title>Profile image upload</title>
+    <meta name="description" content="Profile image upload">
+    <link rel="stylesheet" href="./bower_components/Croppie/croppie.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div ng-app="profile-img-upload" ng-controller="imgUploadController as vm">
+        <div class="image-container">
+            <img class="profile-img" ng-src="{{vm.getSelectedProfileImage()}}" />
+            <a href="#" ng-click="vm.openUploadImageModal()"><i class="glyphicon glyphicon-pencil edit-img"></i></a>
+        </div>
+    </div>
+    <script src="/bower_components/Croppie/croppie.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/webcamjs/webcam.js"></script>
+    <script src="/bower_components/ng-camera/dist/ng-camera.js"></script>
+    <script src="/node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/service.js"></script>
+    <script src="/js/upload.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/directive.js"></script>
+</body>
+
+</html>
